@@ -17,7 +17,7 @@ namespace GameMockup
         public Form1()
         {
             InitializeComponent();
-            this.BackColor = Color.Black;
+            
         }
 
         private void startButton_Click(object sender, EventArgs e)
