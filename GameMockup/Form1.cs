@@ -17,6 +17,7 @@ namespace GameMockup
         public Form1()
         {
             InitializeComponent();
+            countdownLabel.Visible = false;
             
         }
 
@@ -25,23 +26,31 @@ namespace GameMockup
             SoundPlayer titlepressPlayer = new SoundPlayer(Properties.Resources.jingle);
             titlepressPlayer.Play();
             this.BackColor = Color.White;
+            startButton.Visible = false;
             Refresh();
             Thread.Sleep(1000);
 
             SoundPlayer countdownPlayer = new SoundPlayer(Properties.Resources.coin);
             countdownPlayer.Play();
-
-
-            Thread.Sleep(1000);
-            countdownPlayer.Play();
+            countdownLabel.Visible = true;
+            Refresh();
 
             Thread.Sleep(1000);
             countdownPlayer.Play();
+            countdownLabel.Text = "Game Start in: 2";
+            Refresh();
+
+            Thread.Sleep(1000);
+            countdownPlayer.Play();
+            countdownLabel.Text = "Game Start in: 1";
+            Refresh();
 
 
             SoundPlayer endPlayer = new SoundPlayer(Properties.Resources.end);
             Thread.Sleep(1000);
             endPlayer.Play();
+            countdownLabel.Text = "Start!";
+            countdownLabel.ForeColor = Color.White;
 
             this.BackColor = Color.Crimson;
             Refresh();

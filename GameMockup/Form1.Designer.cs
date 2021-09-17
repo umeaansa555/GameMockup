@@ -48,14 +48,14 @@ namespace GameMockup
             // 
             // countdownLabel
             // 
-            this.countdownLabel.AutoSize = true;
             this.countdownLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.countdownLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.countdownLabel.Location = new System.Drawing.Point(220, 119);
+            this.countdownLabel.Location = new System.Drawing.Point(245, 107);
             this.countdownLabel.Name = "countdownLabel";
             this.countdownLabel.Size = new System.Drawing.Size(183, 29);
             this.countdownLabel.TabIndex = 1;
             this.countdownLabel.Text = "Game Start in: 3";
+            this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.countdownLabel.Click += new System.EventHandler(this.countdownLabel_Click);
             // 
             // Form1
@@ -70,7 +70,6 @@ namespace GameMockup
             this.Text = "Title Screen";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
