@@ -56,7 +56,7 @@ namespace GameMockup
             this.countdownLabel.TabIndex = 1;
             this.countdownLabel.Text = "Game Start in: 3";
             this.countdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.countdownLabel.Click += new System.EventHandler(this.countdownLabel_Click);
+            //this.countdownLabel.Click += new System.EventHandler(this.countdownLabel_Click);
             // 
             // Form1
             // 
@@ -68,7 +68,7 @@ namespace GameMockup
             this.Controls.Add(this.startButton);
             this.Name = "Form1";
             this.Text = "Title Screen";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
